@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FF28021A1AB8C8FF0087E39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2802191AB8C8FF0087E39B /* AppDelegate.swift */; };
-		FF28021C1AB8C8FF0087E39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28021B1AB8C8FF0087E39B /* ViewController.swift */; };
+		FF28021C1AB8C8FF0087E39B /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28021B1AB8C8FF0087E39B /* PopoverViewController.swift */; };
 		FF28021F1AB8C8FF0087E39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF28021D1AB8C8FF0087E39B /* Main.storyboard */; };
 		FF2802211AB8C8FF0087E39B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2802201AB8C8FF0087E39B /* Images.xcassets */; };
 		FF2802241AB8C8FF0087E39B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2802221AB8C8FF0087E39B /* LaunchScreen.xib */; };
 		FF2802301AB8C8FF0087E39B /* Popover_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28022F1AB8C8FF0087E39B /* Popover_ViewTests.swift */; };
+		FF28023C1AB8CA010087E39B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28023B1AB8CA010087E39B /* TableViewController.swift */; };
+		FF526CB91ABA07B200D3B078 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF526CB81ABA07B200D3B078 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		FF2802141AB8C8FE0087E39B /* Popover View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popover View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2802181AB8C8FF0087E39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2802191AB8C8FF0087E39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF28021B1AB8C8FF0087E39B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF28021B1AB8C8FF0087E39B /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		FF28021E1AB8C8FF0087E39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF2802201AB8C8FF0087E39B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FF2802231AB8C8FF0087E39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF2802291AB8C8FF0087E39B /* Popover ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Popover ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28022E1AB8C8FF0087E39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF28022F1AB8C8FF0087E39B /* Popover_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover_ViewTests.swift; sourceTree = "<group>"; };
+		FF28023B1AB8CA010087E39B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FF526CB81ABA07B200D3B078 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				FF2802191AB8C8FF0087E39B /* AppDelegate.swift */,
-				FF28021B1AB8C8FF0087E39B /* ViewController.swift */,
+				FF28023B1AB8CA010087E39B /* TableViewController.swift */,
+				FF28021B1AB8C8FF0087E39B /* PopoverViewController.swift */,
 				FF28021D1AB8C8FF0087E39B /* Main.storyboard */,
 				FF2802201AB8C8FF0087E39B /* Images.xcassets */,
 				FF2802221AB8C8FF0087E39B /* LaunchScreen.xib */,
 				FF2802171AB8C8FE0087E39B /* Supporting Files */,
+				FF526CB81ABA07B200D3B078 /* TableViewCell.swift */,
 			);
 			path = "Popover View";
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF28021C1AB8C8FF0087E39B /* ViewController.swift in Sources */,
+				FF28021C1AB8C8FF0087E39B /* PopoverViewController.swift in Sources */,
+				FF526CB91ABA07B200D3B078 /* TableViewCell.swift in Sources */,
+				FF28023C1AB8CA010087E39B /* TableViewController.swift in Sources */,
 				FF28021A1AB8C8FF0087E39B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +415,7 @@
 				FF2802351AB8C8FF0087E39B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF2802361AB8C8FF0087E39B /* Build configuration list for PBXNativeTarget "Popover ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				FF2802381AB8C8FF0087E39B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

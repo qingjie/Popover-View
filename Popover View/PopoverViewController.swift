@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PopoverViewController: UIViewController {
+    
+    @IBOutlet weak var videoTitle: UILabel!  // Holds the selected music video title
+    
+    var selectedMusicVideo = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        videoTitle.text = selectedMusicVideo
     }
 
     override func didReceiveMemoryWarning() {
