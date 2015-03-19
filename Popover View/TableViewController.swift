@@ -75,7 +75,7 @@ class TableViewController: UITableViewController, UIPopoverPresentationControlle
             
             // Set the popover selectedMusicVideo variable
             popover.selectedMusicVideo = musicVideoList[indexPath.row]
-            popover.message = "Welcome back Carter! 🍻🍔"
+            popover.message = "Welcome back Carter! 🍻🍔🍟"
             
             // This statement make the PopoverViewController's view appear as popover on the iOS device
             popover.modalPresentationStyle = UIModalPresentationStyle.Popover
@@ -88,7 +88,7 @@ class TableViewController: UITableViewController, UIPopoverPresentationControlle
             popover.popoverPresentationController?.permittedArrowDirections = .Any
             
             // Set the popover view's content width and hight
-            popover.preferredContentSize = CGSizeMake(320, 80)
+            popover.preferredContentSize = CGSizeMake(320, 85)
             
             // Show the popoverViewController's view on the device's screen
             self.presentViewController(popover, animated: true, completion: nil)

@@ -24,17 +24,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="naR-2p-qYw">
-                                <rect key="frame" x="66" y="24" width="91" height="30"/>
+                                <rect key="frame" x="16" y="57" width="91" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="naR-2p-qYw" firstAttribute="baseline" secondItem="lOg-EX-UuN" secondAttribute="baseline" id="Gvn-wb-Sn9"/>
-                            <constraint firstItem="lOg-EX-UuN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Psj-uq-92Y"/>
-                            <constraint firstItem="naR-2p-qYw" firstAttribute="leading" secondItem="lOg-EX-UuN" secondAttribute="trailing" constant="8" symbolic="YES" id="RXM-DW-m9W"/>
-                            <constraint firstItem="lOg-EX-UuN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="vc4-7r-muJ"/>
+                            <constraint firstItem="naR-2p-qYw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2T4-IM-nRL"/>
+                            <constraint firstItem="lOg-EX-UuN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Gpm-du-vFY"/>
+                            <constraint firstItem="naR-2p-qYw" firstAttribute="top" secondItem="lOg-EX-UuN" secondAttribute="bottom" constant="8" symbolic="YES" id="JD9-2r-XxT"/>
+                            <constraint firstItem="lOg-EX-UuN" firstAttribute="leading" secondItem="naR-2p-qYw" secondAttribute="leading" id="k5p-G5-E1v"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QCC-mD-Ddd"/>
