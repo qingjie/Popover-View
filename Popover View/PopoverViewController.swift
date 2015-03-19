@@ -18,12 +18,16 @@ class PopoverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Set the view's background to a light mint green color
+        self.view.backgroundColor = UIColor(red:0.93, green:0.98, blue:0.93, alpha:1.00)
+        
+        // Set the TextField's text color
+        welcomeMessage.textColor = UIColor.purpleColor()
+        
         // Set the view's Label and TextField properties
         videoTitle.text = selectedMusicVideo
         welcomeMessage.text = message
-        
-        // Set the view's background to a light mint green color
-        self.view.backgroundColor = UIColor(red:0.93, green:0.98, blue:0.93, alpha:1.00)
     }
 
     override func didReceiveMemoryWarning() {
