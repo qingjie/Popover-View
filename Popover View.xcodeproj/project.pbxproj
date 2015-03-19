@@ -14,8 +14,6 @@
 		FF2802241AB8C8FF0087E39B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2802221AB8C8FF0087E39B /* LaunchScreen.xib */; };
 		FF2802301AB8C8FF0087E39B /* Popover_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28022F1AB8C8FF0087E39B /* Popover_ViewTests.swift */; };
 		FF28023C1AB8CA010087E39B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28023B1AB8CA010087E39B /* TableViewController.swift */; };
-		FF526CB91ABA07B200D3B078 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF526CB81ABA07B200D3B078 /* TableViewCell.swift */; };
-		FF526CBB1ABA540C00D3B078 /* PopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF526CBA1ABA540C00D3B078 /* PopoverBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +38,6 @@
 		FF28022E1AB8C8FF0087E39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF28022F1AB8C8FF0087E39B /* Popover_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover_ViewTests.swift; sourceTree = "<group>"; };
 		FF28023B1AB8CA010087E39B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		FF526CB81ABA07B200D3B078 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		FF526CBA1ABA540C00D3B078 /* PopoverBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +86,6 @@
 				FF2802201AB8C8FF0087E39B /* Images.xcassets */,
 				FF2802221AB8C8FF0087E39B /* LaunchScreen.xib */,
 				FF2802171AB8C8FE0087E39B /* Supporting Files */,
-				FF526CB81ABA07B200D3B078 /* TableViewCell.swift */,
-				FF526CBA1ABA540C00D3B078 /* PopoverBackgroundView.swift */,
 			);
 			path = "Popover View";
 			sourceTree = "<group>";
@@ -222,10 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF28021C1AB8C8FF0087E39B /* PopoverViewController.swift in Sources */,
-				FF526CB91ABA07B200D3B078 /* TableViewCell.swift in Sources */,
 				FF28023C1AB8CA010087E39B /* TableViewController.swift in Sources */,
 				FF28021A1AB8C8FF0087E39B /* AppDelegate.swift in Sources */,
-				FF526CBB1ABA540C00D3B078 /* PopoverBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
