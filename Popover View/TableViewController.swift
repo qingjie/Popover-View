@@ -53,42 +53,50 @@ class TableViewController: UITableViewController, UIPopoverPresentationControlle
         // Configure the reusuable cell
         cell.imageView?.image = UIImage(named: "music-video-32")
         cell.textLabel?.text = musicVideoList[indexPath.row]
+        
+        // Set the selected cell's background to a light mint green color
+        var bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor(red:0.93, green:0.98, blue:0.93, alpha:1.00)
+        cell.selectedBackgroundView = bgColorView
 
         // Return the configured cell
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
         if let indexPath = self.tableView.indexPathForSelectedRow() {
-            let sView = tableView.cellForRowAtIndexPath(indexPath)
-            var sRect = cell.bounds
-            
+            // Put the selected cell's sourceView and sourceRect property value in separate variables
+            let selectedCellSourceView = tableView.cellForRowAtIndexPath(indexPath)
+            let selectedCellSourceRect = cell.bounds
+
             // Put the view that'll be shown as a popover in a variable
             var popover = UIStoryboard(name: "Main",
                 bundle: nil).instantiateViewControllerWithIdentifier("idPopover") as PopoverViewController
             
-            // Put the selected music video in a variable
-            selectedMusicVideo = musicVideoList[indexPath.row]
+            // Set the popover selectedMusicVideo variable
+            popover.selectedMusicVideo = musicVideoList[indexPath.row]
+            popover.message = "Welcome back Carter! 🍻🍔"
             
-            println("index number of the tableView cell tapped is: \(indexPath.row)\nbounds\(sRect)")
-            println("SelectedMusicVideo = \(selectedMusicVideo)")
-            
-            // Pass it to the popover view
-            popover.selectedMusicVideo = selectedMusicVideo
-            
-            // Configure the PopoverViewController's view
+            // This statement make the PopoverViewController's view appear as popover on the iOS device
             popover.modalPresentationStyle = UIModalPresentationStyle.Popover
+            
+            // Set the popover propertis
+            popover.popoverPresentationController?.backgroundColor = UIColor(red:0.93, green:0.98, blue:0.93, alpha:1.00)
             popover.popoverPresentationController?.delegate = self
-            popover.popoverPresentationController?.sourceView = sView
-            popover.popoverPresentationController?.sourceRect = sRect
+            popover.popoverPresentationController?.sourceView = selectedCellSourceView
+            popover.popoverPresentationController?.sourceRect = selectedCellSourceRect
             popover.popoverPresentationController?.permittedArrowDirections = .Any
             
             // Set the popover view's content width and hight
-            popover.preferredContentSize = CGSizeMake(300, 80)
+            popover.preferredContentSize = CGSizeMake(320, 80)
             
-            // Present the popoverViewController's view on screen
+            // Show the popoverViewController's view on the device's screen
             self.presentViewController(popover, animated: true, completion: nil)
+            
+            /***** DEBUG STATEMENTS ****/
+            println("Tapped cell's index number: \(indexPath.row)")
+            println("Selected cell bounds: \(selectedCellSourceRect)")
+            println("Selected music video name:  \(selectedMusicVideo)")
         }
     }
     
