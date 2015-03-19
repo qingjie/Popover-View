@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController, UIPopoverPresentationControllerDelegate {
+class TableViewController: UITableViewController {
     @IBOutlet weak var selectButton: UIBarButtonItem!
     var musicVideoList = [String]()
     var cell: UITableViewCell!
