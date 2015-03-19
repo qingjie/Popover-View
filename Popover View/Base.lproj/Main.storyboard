@@ -24,17 +24,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="naR-2p-qYw">
-                                <rect key="frame" x="16" y="57" width="91" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="57" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="naR-2p-qYw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2T4-IM-nRL"/>
-                            <constraint firstItem="lOg-EX-UuN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Gpm-du-vFY"/>
-                            <constraint firstItem="naR-2p-qYw" firstAttribute="top" secondItem="lOg-EX-UuN" secondAttribute="bottom" constant="8" symbolic="YES" id="JD9-2r-XxT"/>
-                            <constraint firstItem="lOg-EX-UuN" firstAttribute="leading" secondItem="naR-2p-qYw" secondAttribute="leading" id="k5p-G5-E1v"/>
+                            <constraint firstItem="lOg-EX-UuN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RPB-Ez-akR"/>
+                            <constraint firstItem="naR-2p-qYw" firstAttribute="top" secondItem="lOg-EX-UuN" secondAttribute="bottom" constant="8" symbolic="YES" id="cuC-99-y71"/>
+                            <constraint firstItem="naR-2p-qYw" firstAttribute="leading" secondItem="lOg-EX-UuN" secondAttribute="leading" id="wlH-6O-Wy7"/>
+                            <constraint firstItem="lOg-EX-UuN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yTY-6T-kZ5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QCC-mD-Ddd"/>
@@ -47,7 +47,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="0sw-tX-lx2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2452" y="384"/>
+            <point key="canvasLocation" x="1773" y="1074"/>
         </scene>
         <!--Music Videos-->
         <scene sceneID="1N4-ba-l2O">
@@ -100,7 +100,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwg-I1-Fud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="384"/>
+            <point key="canvasLocation" x="1046" y="384"/>
         </scene>
     </scenes>
 </document>
