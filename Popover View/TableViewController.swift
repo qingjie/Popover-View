@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController,UIPopoverPresentationControllerDelegate{
     var musicVideoList = [String]()
     var cell: UITableViewCell!
     var selectedMusicVideo = String()
@@ -39,11 +39,48 @@ class TableViewController: UITableViewController {
         // Create a reusable cell
         cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
+        // Configure the reusable cell
+        cell.imageView?.image = UIImage(named: "music-video-32")
+        cell.textLabel?.text = musicVideoList[indexPath.row]
+        
+        // Set the selected cell's background to a light mint green color
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor(red:0.93, green:0.98, blue:0.93, alpha:1.00)
+        cell.selectedBackgroundView = bgColorView
+        
         // Return the configured cell
         return cell
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let indexPath = self.tableView.indexPathForSelectedRow{
+            let selectedCellSourceView = tableView.cellForRowAtIndexPath(indexPath)
+            let selectedCellSourceRect = cell.bounds
+            
+            let popover = UIStoryboard(name:"Main",bundle: nil).instantiateViewControllerWithIdentifier("idPopover") as! PopoverViewController
+            
+            popover.selectedVideoTitle = musicVideoList[indexPath.row]
+            popover.message = "Welcome back Carter! "
+            
+            popover.modalPresentationStyle = UIModalPresentationStyle.Popover
+            
+            popover.popoverPresentationController?.backgroundColor = UIColor(red:0.93,green:0.98,blue: 0.93,alpha: 1.00);
+            popover.popoverPresentationController?.delegate = self
+            
+            popover.popoverPresentationController?.sourceView = selectedCellSourceView
+            popover.popoverPresentationController?.sourceRect = selectedCellSourceRect
+            popover.popoverPresentationController?.permittedArrowDirections = .Any
+            popover.preferredContentSize = CGSizeMake(320, 85)
+            self.presentViewController(popover, animated: true, completion: nil)
+            
+            print("Tapped cell's index number:\(indexPath.row)");
+            print("Selected cell bounds:\(selectedCellSourceRect)");
+            print("Selected music video name:\(selectedMusicVideo)");
+            
+        }
     }
 
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
 }
